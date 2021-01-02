@@ -3,7 +3,7 @@ import re
 import urllib.request
 
 from bs4 import BeautifulSoup
-from classes.item import Item
+from ebayItemsParser.item import Item
 
 
 class Soup:

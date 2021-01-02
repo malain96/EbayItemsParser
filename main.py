@@ -1,8 +1,8 @@
 import datetime
 import os
 
-from classes.database import Database
-from classes.soup import Soup
+from ebayItemsParser.database import Database
+from ebayItemsParser.soup import Soup
 from dotenv import load_dotenv
 
 if __name__ == '__main__':
