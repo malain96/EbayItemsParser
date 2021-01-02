@@ -1,6 +1,6 @@
 import os
 import re
-import urllib.request
+import requests
 
 from bs4 import BeautifulSoup
 from ebayItemsParser.item import Item
@@ -21,5 +21,5 @@ class Soup:
         # Calculate the amount of item to skip (used in the URL)
         skip_count = (page - 1) * items_count
         url = os.getenv("URL").format(page, skip_count)
-        page_html = urllib.request.urlopen(url)
-        return BeautifulSoup(page_html, 'html.parser')
+        req = requests.get(url)
+        return BeautifulSoup(req.text, 'html.parser')

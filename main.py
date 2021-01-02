@@ -43,3 +43,4 @@ if __name__ == '__main__':
     db.insert_items(items)
     # Insert a sync entry
     db.insert_sync(current_date, total_items)
+    print('Done - Inserted {} item(s)'.format(total_items))
