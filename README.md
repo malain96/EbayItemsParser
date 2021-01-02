@@ -18,14 +18,16 @@ You are more than welcome to copy and modify it as you please.
 
 ## Pre-requisites
 
-* [Python 3](https://www.python.org/downloads/)
+* [Python 3](https://www.python.org/)
+* [pip](https://pypi.org/project/pip/)
 * [MySQL](https://www.mysql.com/)
 
 ## Installing
 
 * Clone or download the repository 
 * In a terminal, go to the project's root 
-* Run `pip install -r requirements.txt` to install the dependencies
+* Run `pip3 install -r requirements.txt` to install the dependencies
+* Create a database
 * Create a `.env` file based on the `.env.example` and replace the variables by your own
 
 ## Running
